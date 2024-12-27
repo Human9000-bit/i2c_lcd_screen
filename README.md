@@ -1,5 +1,5 @@
+# I2C LCD
 
-### I2C LCD
 Port of the liquide crystall I2C lirary found for arduino in rust.
 *Supports 4x16 Displays.*
 Tested on raspberry pi and esp32. 

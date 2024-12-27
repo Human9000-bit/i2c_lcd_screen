@@ -1,15 +1,15 @@
 [package]
-name = "i2c_lcd"
-version = "0.2.0"
-authors = ["Guanicoe <guanicoe@m.me>, Michael <mnxd.git@gmail.com>"]
+name = "i2c_lcd_screen"
+version = "1.0.0"
+authors = ["Guanicoe <guanicoe@m.me>, Michael <mnxd.git@gmail.com>, Emeric Martineau <11473190+emeric-martineau@users.noreply.github.com>"]
 edition = "2021"
 description = "Rewrite of I2C driver for LM1602 LCD displays based on port of LiquidCrystal_I2C.h."
-homepage = "https://github.com/mn-xd/i2c_lcd"
-keywords = ["lcd", "LM1602", "embedded", "I2C", "LiquidCrystal"]
+homepage = "https://github.com/emeric-martineau/i2c_lcd_screen"
+keywords = ["lcd", "LM1602", "embedded", "I2C", "LiquidCrystal", "embedded-hal v1"]
 license = "GPL-3.0-or-later"
 readme = "README.md"
-repository = "https://github.com/mn-xd/i2c_lcd"
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/emeric-martineau/i2c_lcd_screen"
+rust-version = "1.81"
 
 [dependencies]
 embedded-hal = "1.0.0"
