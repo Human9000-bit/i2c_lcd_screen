@@ -5,11 +5,11 @@ authors = ["Guanicoe <guanicoe@m.me>, Michael <mnxd.git@gmail.com>, Emeric Marti
 edition = "2021"
 description = "Rewrite of I2C driver for LM1602 LCD displays based on port of LiquidCrystal_I2C.h."
 homepage = "https://github.com/emeric-martineau/i2c_lcd_screen"
-keywords = ["lcd", "LM1602", "embedded", "I2C", "LiquidCrystal", "embedded-hal v1"]
+keywords = ["lcd", "LM1602", "LM2004", "embedded", "I2C", "LiquidCrystal", "embedded-hal v1"]
 license = "GPL-3.0-or-later"
 readme = "README.md"
 repository = "https://github.com/emeric-martineau/i2c_lcd_screen"
-rust-version = "1.81"
+rust-version = "1.77"
 
 [dependencies]
 embedded-hal = "1.0.0"
