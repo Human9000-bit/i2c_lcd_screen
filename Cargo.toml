@@ -1,6 +1,6 @@
 [package]
 name = "i2c_lcd_screen"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["Guanicoe <guanicoe@m.me>, Michael <mnxd.git@gmail.com>, Emeric Martineau <11473190+emeric-martineau@users.noreply.github.com>"]
 edition = "2021"
 description = "Rewrite of I2C driver for LM1602 LCD displays based on port of LiquidCrystal_I2C.h."

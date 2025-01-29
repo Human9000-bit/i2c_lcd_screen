@@ -1,7 +1,11 @@
 # I2C LCD
 
 Port of the liquide crystall I2C lirary found for arduino in rust.
+
+Compatible with embedded-hal v1 and embedded-hal-bus v1.
+
 *Supports 4x16 Displays.*
+
 Tested on raspberry pi and esp32. 
 
 Example of use:

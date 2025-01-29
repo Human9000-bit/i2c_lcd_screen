@@ -161,20 +161,20 @@ impl Default for DisplayControl {
     }
 }
 
-pub struct Lcd<'a, I2C, D> {
-    i2c: &'a mut I2C,
+pub struct Lcd<I2C, D> {
+    i2c: I2C,
     control: DisplayControl,
     address: u8,
-    delay: &'a mut D,
+    delay: D,
     rows: u8,
     row_offsets: [u8; 4],
 }
 
-impl<'a, I2C: I2c, D: DelayNs> Lcd<'a, I2C, D> {
+impl<I2C: I2c, D: DelayNs> Lcd<I2C, D> {
     pub fn new(
-        i2c: &'a mut I2C,
+        i2c: I2C,
         address: u8,
-        delay: &'a mut D,
+        delay: D,
         cols: u8,
         rows: u8,
     ) -> Result<Self, I2C::Error> {
