@@ -1,3 +1,5 @@
+#![no_std]
+
 //! Port of the liquide crystall I2C lirary found for arduino in rust.
 //! Tested on raspberry pi.
 
@@ -23,8 +25,6 @@
 //! }
 
 //! ```
-
-#![no_std]
 
 use core::result::Result::{self, Ok};
 use core::default::Default;
