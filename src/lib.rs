@@ -24,8 +24,7 @@
 
 // ```
 
-use std::usize;
-
+use core::result::Result::{self, Ok};
 use embedded_hal::{delay::DelayNs, i2c::I2c};
 
 /// Controls the visibilty of the non-blinking cursor, which is basically an _ **after** the cursor position.
