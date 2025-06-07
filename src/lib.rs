@@ -1,5 +1,3 @@
-#![no_std]
-
 //! Port of the liquide crystall I2C lirary found for arduino in rust.
 //! Tested on raspberry pi.
 
@@ -26,8 +24,14 @@
 
 //! ```
 
-use core::result::Result::{self, Ok};
+#![no_std]
+
 use core::default::Default;
+use core::marker::Copy;
+use core::clone::Clone;
+use core::fmt::Debug;
+use core::prelude::rust_2024::derive;
+use core::result::Result::{self, Ok};
 use embedded_hal::{delay::DelayNs, i2c::I2c};
 
 /// Controls the visibility of the non-blinking cursor, which is basically an _ **after** the cursor position.
@@ -173,13 +177,7 @@ pub struct Lcd<I2C, D> {
 }
 
 impl<I2C: I2c, D: DelayNs> Lcd<I2C, D> {
-    pub fn new(
-        i2c: I2C,
-        address: u8,
-        delay: D,
-        cols: u8,
-        rows: u8,
-    ) -> Result<Self, I2C::Error> {
+    pub fn new(i2c: I2C, address: u8, delay: D, cols: u8, rows: u8) -> Result<Self, I2C::Error> {
         let mut display = Self {
             i2c,
             control: DisplayControl::new(),
