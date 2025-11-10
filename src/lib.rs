@@ -26,10 +26,10 @@
 
 #![no_std]
 
-use core::default::Default;
-use core::marker::Copy;
 use core::clone::Clone;
+use core::default::Default;
 use core::fmt::Debug;
+use core::marker::Copy;
 use core::prelude::rust_2024::derive;
 use core::result::Result::{self, Ok};
 use embedded_hal::{delay::DelayNs, i2c::I2c};
